@@ -1,7 +1,7 @@
 use std::process::{Command, Stdio};
 
 pub fn run_os_scraper() -> Result<String, Box<dyn std::error::Error>> {
-    let output = Command::new("./os-scraper")
+    let output = Command::new("/usr/bin/os-scraper")
         .arg("-all") // Add a single argument
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())

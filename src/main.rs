@@ -39,7 +39,6 @@ async fn main() {
         os_release().unwrap_or_else(|_| "Unknown".to_string()),
     );
 
-    println!("{}", os_info);
 
     let search = Clearch::parse();
 
