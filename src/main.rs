@@ -61,7 +61,7 @@ async fn main() {
 
     // Function to get the prompt with OS info and os-scraper output
     fn get_prompt(os_info: &str, os_scraper_output: &str) -> String {
-        let prompt_content = match std::fs::read_to_string("prompt") {
+        let prompt_content = match std::fs::read_to_string("/usr/local/share/clearch/prompt") {
             Ok(content) => content,
             Err(_) => {
                 // Try alternative path - based on executable location
